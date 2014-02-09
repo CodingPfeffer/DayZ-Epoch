@@ -18,9 +18,8 @@ if(!isNull(_obj)) then {
 	_objectID 	= _obj getVariable ["ObjectID","0"];
 	// Find objectUID
 	_objectUID	= _obj getVariable ["ObjectUID","0"];
-	if !(DZE_GodModeBase) then {
-		_obj removeAllMPEventHandlers "MPKilled";
-	};
+
+	_obj removeAllMPEventHandlers "MPKilled";
 	// Remove old object
 	deleteVehicle _obj;
 	
@@ -64,11 +63,8 @@ _key call server_hiveWrite;
 _object setVariable ["lastUpdate",time];
 _object setVariable ["ObjectUID", _uid,true];
 // _object setVariable ["CharacterID",_charID,true];
-if (DZE_GodModeBase) then {
-	_object addEventHandler ["HandleDamage", {false}];
-}else{
-	_object addMPEventHandler ["MPKilled",{_this call object_handleServerKilled;}];
-};
+
+_object addMPEventHandler ["MPKilled",{_this call object_handleServerKilled;}];
 // Test disabling simulation server side on buildables only.
 _object enableSimulation false;
 

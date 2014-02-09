@@ -23,10 +23,10 @@ enableSentences false;
 spawnShoremode = 1; // Default = 1 (on shore)
 spawnArea= 1500; // Default = 1500
 
-MaxVehicleLimit = 300; // Default = 50
+MaxVehicleLimit = 400; // Default = 50
 MaxDynamicDebris = 500; // Default = 100
 dayz_MapArea = 14000; // Default = 10000
-dayz_maxLocalZombies = 30; // Default = 30 
+dayz_maxLocalZombies = 50; // Default = 30 
 
 dayz_paraSpawn = false;
 
@@ -39,8 +39,8 @@ dayz_sellDistance_air = 40;
 
 dayz_maxAnimals = 5; // Default: 8
 dayz_tameDogs = true;
-DynamicVehicleDamageLow = 0; // Default: 0
-DynamicVehicleDamageHigh = 100; // Default: 100
+DynamicVehicleDamageLow = 5; // Default: 0
+DynamicVehicleDamageHigh = 95; // Default: 100
 
 DZE_BuildOnRoads = false; // Default: False
 
