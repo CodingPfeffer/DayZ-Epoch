@@ -25,6 +25,11 @@ if ((typeName _objectID != "string") || (typeName _uid != "string")) then
     _objectID = "0";
     _uid = "0";
 };
+
+// bexs
+if (_object getVariable "Sarge" == 1) exitWith {};
+//
+
 if (!_parachuteWest and !(locked _object)) then {
 	if (_objectID == "0" && _uid == "0") then
 	{

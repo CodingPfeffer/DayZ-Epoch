@@ -32,6 +32,10 @@ server_playerSync =				compile preprocessFileLineNumbers "\z\addons\dayz_server\
 zombie_findOwner =				compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_findOwner.sqf";
 server_updateNearbyObjects =	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateNearbyObjects.sqf";
 server_spawnCrashSite  =    	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnCrashSite.sqf";
+// bexs
+server_spawnYellowCarePackages = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnYellowCarePackages.sqf";
+server_airRaid =            	compile preprocessFileLineNumbers "z\addons\dayz_server\compile\server_airRaid.sqf";
+//
 server_handleZedSpawn =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_handleZedSpawn.sqf";
 server_spawnEvents =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnEvent.sqf";
 //server_weather =				compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_weather.sqf";
@@ -612,6 +616,19 @@ dayz_recordLogin = {
 	_key call server_hiveWrite;
 };
 
+// bexs
+//----------InitMissions--------//
+MissionGo = 0;
+MissionGoMinor = 0;
+if (isServer) then { 
+SMarray = ["SM1","SM2","SM3","SM4","SM5","SM6","SM7","SM8","SM9","SM10","SM11","SM12","SM13"];
+[] execVM "\z\addons\dayz_server\missions\major\SMfinder.sqf"; //Starts major mission system
+SMarray2 = ["SM1","SM2","SM3","SM4","SM5","SM6","SM7","SM8","SM9","SM10","SM11","SM12","SM13"];
+[] execVM "\z\addons\dayz_server\missions\minor\SMfinder.sqf"; //Starts minor mission system
+};
+//---------EndInitMissions------//
+//
+
 dayz_perform_purge = {
 	if(!isNull(_this)) then {
 		_this removeAllMPEventHandlers "mpkilled";
@@ -785,7 +802,7 @@ server_checkHackers = {
 	if(!isNil "DZE_DYN_HackerCheck") exitWith {  DZE_DYN_AntiStuck2nd = DZE_DYN_AntiStuck2nd + 1;};
 	DZE_DYN_HackerCheck = true;
 	{
-		if(vehicle _x != _x && !(vehicle _x in PVDZE_serverObjectMonitor) && (isPlayer _x)  && !((typeOf vehicle _x) in DZE_safeVehicle)) then {
+		if(vehicle _x != _x && !(vehicle _x in PVDZE_serverObjectMonitor) && (vehicle _x getVariable ["Sarge",0] != 1) && (isPlayer _x)  && !((typeOf vehicle _x) in DZE_safeVehicle)) then {
 			diag_log ("CLEANUP: KILLING A HACKER " + (name _x) + " " + str(_x) + " IN " + (typeOf vehicle _x));
 			(vehicle _x) setDamage 1;
 			_x setDamage 1;
@@ -879,3 +896,15 @@ server_spawnCleanAnimals = {
 		diag_log (format["CLEANUP: Deleted %1 Animals out of %2",_delQtyAnimal,_qty]);
 	};
 };
+
+//bexs
+[] execVM "\z\addons\dayz_server\buildings\otmel.sqf";
+[] execVM "\z\addons\dayz_server\buildings\TikhayaCity.sqf";
+[] execVM "\z\addons\dayz_server\buildings\schrottplatz.sqf";
+[] execVM "\z\addons\dayz_server\buildings\bridges.sqf";
+//[] execVM "\z\addons\dayz_server\buildings\sectorfng.sqf";
+[] execVM "\z\addons\dayz_server\buildings\service.sqf";
+[] execVM "\z\addons\dayz_server\buildings\trader.sqf";
+[] execVM "\z\addons\dayz_server\buildings\zone.sqf";
+[] execVM "\z\addons\dayz_server\buildings\golden_river.sqf";
+//

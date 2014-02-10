@@ -322,6 +322,15 @@ if (isServer and isNil "sm_done") then {
 		OldHeliCrash = false;
 	};
 
+	// bexs
+	//Spawn care packages
+	diag_log (format["CAREPKG Yellow: ABOUT TO SPAWN"]); 
+	for "_x" from 1 to 6 do {
+    _id = [] spawn server_spawnYellowCarePackages;
+	}; 
+	//Spawn care packages  
+	//
+	
 	allowConnection = true;
 
 	// [_guaranteedLoot, _randomizedLoot, _frequency, _variance, _spawnChance, _spawnMarker, _spawnRadius, _spawnFire, _fadeFire]
@@ -329,6 +338,12 @@ if (isServer and isNil "sm_done") then {
 		_nul = [3, 4, (50 * 60), (15 * 60), 0.75, 'center', HeliCrashArea, true, false] spawn server_spawnCrashSite;
 	};
 
+	//bexs
+	//Spawn air raid
+	diag_log (format["Air Raid: ABOUT TO SPAWN"]); 
+    _id = [] spawn server_airRaid;
+	//
+	
 	if (isDedicated) then {
 		// Epoch Events
 		_id = [] spawn server_spawnEvents;
