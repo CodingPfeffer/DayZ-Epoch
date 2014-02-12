@@ -32,7 +32,7 @@
 5 vilegaming
 5 v\.i\.l\.e
 5 Lystic
-5 setDammage
+1 setDammage
 5 "compile toString"
 5 @TheWarZ
 5 beeeh
