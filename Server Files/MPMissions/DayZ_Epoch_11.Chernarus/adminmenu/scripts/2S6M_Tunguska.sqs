@@ -1,0 +1,8 @@
+TitleText [format["Spawning 2S6M_Tunguska"], "PLAIN DOWN"]
+~1
+TitleText [format[" "], "PLAIN DOWN"]
+
+deletevehicle vehicle player;PLANE1 = createVehicle ['2S6M_Tunguska',[(getPos player) select 0,(getPos player) select 1,150], [], 0, 'FLY'];Player moveInDriver PLANE1;
+		
+		
+closedialog 0;

@@ -1,0 +1,14 @@
+TitleText [format["Spawning Huey 50 meters behind you"], "PLAIN DOWN"]
+~2
+TitleText [format[" "], "PLAIN DOWN"]
+
+_veh_type="UH1Y";//MH60S
+
+
+		_dir = getdir vehicle player;
+		_pos = getPos vehicle player;
+		_pos = [(_pos select 0)-50*sin(_dir),(_pos select 1)-50*cos(_dir),0];
+		_veh = _veh_type createvehiclelocal ( position player );
+		_veh setDir _dir;
+				//_veh = (Vehicle player);
+_veh setVariable ["ObjectID",999+random(9999),true] > 0;

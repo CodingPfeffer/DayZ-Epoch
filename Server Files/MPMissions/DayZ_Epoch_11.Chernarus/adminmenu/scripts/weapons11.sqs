@@ -1,0 +1,18 @@
+player addWeapon "M197";
+player addWeapon "HellfireLauncher";
+player addWeapon "SidewinderLaucher_AH1Z";
+player addWeapon "FFARLauncher";
+player addMagazine "750Rnd_M197_AH1";
+player addMagazine "8Rnd_Hellfire";
+player addMagazine "38Rnd_FFAR";
+player addMagazine "2Rnd_Sidewinder_AH1Z";
+player addMagazine "8Rnd_Hellfire";
+player addMagazine "2Rnd_Sidewinder_AH1Z";
+player addWeapon "Binocular";
+player addWeapon "NVGoggles";
+player addWeapon "ItemGPS";
+
+
+player addmagazine "6Rnd_GBU12_AV8B"; player addmagazine "1350Rnd_30mmAP_A10"; player addmagazine "2000Rnd_23mm_AZP85"; player addmagazine "20Rnd_120mmSABOT_M1A2"; player addmagazine "20Rnd_120mmHE_M1A2"; player addweapon "bomblauncher"; player addweapon "AZP85"; player addweapon "GAU8"; player addweapon "M256"; player addweapon "M256";// player selectweapon "M197";
+
+end

@@ -1,0 +1,11 @@
+TitleText [format["Spawning HUMVIE 50 meters behind you"], "PLAIN DOWN"]
+~2
+TitleText [format[" "], "PLAIN DOWN"]
+
+_veh_type="HMMWV_Armored";
+
+
+_tank = "HMMWV_Armored" createVehicleLocal (getpos player);
+_v = (Vehicle player);
+_v setVariable ["ObjectID",234,true] > 0;
+_veh setVariable ["ObjectID",234,true] > 0;
