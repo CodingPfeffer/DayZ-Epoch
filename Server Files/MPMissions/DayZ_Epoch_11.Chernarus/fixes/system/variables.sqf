@@ -18,26 +18,26 @@ AllPlayers = ["Survivor2_DZ","SurvivorWcombat_DZ","SurvivorWdesert_DZ","Survivor
 
 //Cooking
 meatraw = [
-    "FoodSteakRaw",
-    "FoodmeatRaw",
-    "FoodbeefRaw",
-    "FoodmuttonRaw",
-    "FoodchickenRaw",
-    "FoodrabbitRaw",
-    "FoodbaconRaw",
+	"FoodSteakRaw",
+	"FoodmeatRaw",
+	"FoodbeefRaw",
+	"FoodmuttonRaw",
+	"FoodchickenRaw",
+	"FoodrabbitRaw",
+	"FoodbaconRaw",
 	"ItemTrout",
 	"ItemSeaBass",
 	"ItemTuna"
 ];
 exceptionsraw = ["ItemTuna"];
 meatcooked = [
-    "FoodSteakCooked",
-    "FoodmeatCooked",
-    "FoodbeefCooked",
-    "FoodmuttonCooked",
-    "FoodchickenCooked",
-    "FoodrabbitCooked",
-    "FoodbaconCooked",
+	"FoodSteakCooked",
+	"FoodmeatCooked",
+	"FoodbeefCooked",
+	"FoodmuttonCooked",
+	"FoodchickenCooked",
+	"FoodrabbitCooked",
+	"FoodbaconCooked",
 	"ItemTroutCooked",
 	"ItemSeaBassCooked",
 	"ItemTunaCooked"
@@ -49,10 +49,10 @@ no_output_food = ["FoodMRE", "FoodPistachio", "FoodNutmix","FoodBioMeat"]+meatco
 badfood = ["FoodBioMeat","FoodCanUnlabeled"];
 
 food_with_output=[
-    "FoodCanBakedBeans",
-    "FoodCanSardines",
-    "FoodCanFrankBeans",
-    "FoodCanPasta",
+	"FoodCanBakedBeans",
+	"FoodCanSardines",
+	"FoodCanFrankBeans",
+	"FoodCanPasta",
 	"FoodCanGriff",
 	"FoodCanBadguy",
 	"FoodCanBoneboy",
@@ -68,10 +68,10 @@ food_with_output=[
 ];
 
 food_output = [
-    "TrashTinCan",
-    "TrashTinCan",
-    "TrashTinCan",
-    "TrashTinCan",
+	"TrashTinCan",
+	"TrashTinCan",
+	"TrashTinCan",
+	"TrashTinCan",
 	"FoodCanGriffEmpty",
 	"FoodCanBadguyEmpty",
 	"FoodCanBoneboyEmpty",
@@ -88,41 +88,41 @@ food_output = [
 //Drinking
 no_output_drink = ["ItemWaterbottle", "ItemWaterbottleBoiled"];
 drink_with_output = [
-    "ItemSoda",  //just to define item for ItemSodaEmpty
+	"ItemSoda",  //just to define item for ItemSodaEmpty
 	"ItemSodaRbull",
 	"ItemSodaOrangeSherbet",
-    "ItemSodaCoke",
-    "ItemSodaPepsi",
-    "ItemSodaMdew",
-    "ItemSodaMtngreen",
-    "ItemSodaR4z0r",
-    "ItemSodaClays",
-    "ItemSodaSmasht", 
-    "ItemSodaDrwaste", 
-    "ItemSodaLemonade", 
-    "ItemSodaLvg", 
-    "ItemSodaMzly", 
-    "ItemSodaRabbit"
+	"ItemSodaCoke",
+	"ItemSodaPepsi",
+	"ItemSodaMdew",
+	"ItemSodaMtngreen",
+	"ItemSodaR4z0r",
+	"ItemSodaClays",
+	"ItemSodaSmasht",
+	"ItemSodaDrwaste",
+	"ItemSodaLemonade",
+	"ItemSodaLvg",
+	"ItemSodaMzly",
+	"ItemSodaRabbit"
 ];
 drink_output = [
-    "ItemSodaEmpty", 
-	"ItemSodaEmpty", 
-	"ItemSodaEmpty", 
-    "ItemSodaCokeEmpty",
-    "ItemSodaPepsiEmpty",
-    "ItemSodaMdewEmpty",
-    "ItemSodaMtngreenEmpty",
-    "ItemSodaR4z0rEmpty",
-    "ItemSodaClaysEmpty",
-    "ItemSodaSmashtEmpty", 
-    "ItemSodaDrwasteEmpty", 
-    "ItemSodaLemonadeEmpty", 
-    "ItemSodaLvgEmpty", 
-    "ItemSodaMzlyEmpty", 
-    "ItemSodaRabbitEmpty"
+	"ItemSodaEmpty",
+	"ItemSodaEmpty",
+	"ItemSodaEmpty",
+	"ItemSodaCokeEmpty",
+	"ItemSodaPepsiEmpty",
+	"ItemSodaMdewEmpty",
+	"ItemSodaMtngreenEmpty",
+	"ItemSodaR4z0rEmpty",
+	"ItemSodaClaysEmpty",
+	"ItemSodaSmashtEmpty",
+	"ItemSodaDrwasteEmpty",
+	"ItemSodaLemonadeEmpty",
+	"ItemSodaLvgEmpty",
+	"ItemSodaMzlyEmpty",
+	"ItemSodaRabbitEmpty"
 ];
 boil_tin_cans = [
-    "TrashTinCan",
+	"TrashTinCan",
 	"FoodCanGriffEmpty",
 	"FoodCanBadguyEmpty",
 	"FoodCanBoneboyEmpty",
@@ -135,19 +135,19 @@ boil_tin_cans = [
 	"FoodCanPowellEmpty",
 	"FoodCanTylersEmpty",
 	"FoodCanUnlabeledEmpty",
-    "ItemSodaEmpty", 
-    "ItemSodaCokeEmpty",
-    "ItemSodaPepsiEmpty",
-    "ItemSodaMdewEmpty",
-    "ItemSodaMtngreenEmpty",
-    "ItemSodaR4z0rEmpty",
-    "ItemSodaClaysEmpty",
-    "ItemSodaSmashtEmpty", 
-    "ItemSodaDrwasteEmpty", 
-    "ItemSodaLemonadeEmpty", 
-    "ItemSodaLvgEmpty", 
-    "ItemSodaMzlyEmpty", 
-    "ItemSodaRabbitEmpty"
+	"ItemSodaEmpty",
+	"ItemSodaCokeEmpty",
+	"ItemSodaPepsiEmpty",
+	"ItemSodaMdewEmpty",
+	"ItemSodaMtngreenEmpty",
+	"ItemSodaR4z0rEmpty",
+	"ItemSodaClaysEmpty",
+	"ItemSodaSmashtEmpty",
+	"ItemSodaDrwasteEmpty",
+	"ItemSodaLemonadeEmpty",
+	"ItemSodaLvgEmpty",
+	"ItemSodaMzlyEmpty",
+	"ItemSodaRabbitEmpty"
 ];
 
 dayz_combination = "";
@@ -245,7 +245,7 @@ dayz_resetSelfActions = {
 	s_halo_action =         -1;
 	s_player_SurrenderedGear = -1;
 	s_player_maintain_area = -1;
-    s_player_maintain_area_preview = -1;
+	s_player_maintain_area_preview = -1;
 	s_player_heli_lift = -1;
 	s_player_heli_detach = -1;
 };
@@ -256,7 +256,7 @@ s_player_lastTarget =	[objNull,objNull,objNull,objNull,objNull];
 s_player_repairActions = [];
 s_player_lockunlock = [];
 
-// Custom 
+// Custom
 s_player_madsci 		= 	[];
 s_player_parts 			= 	[];
 s_player_combi 			= 	[];
@@ -381,7 +381,8 @@ DZE_HeliAllowTowFrom = [
 	"CH_47F_EP1_DZE",
 	"CH_47F_EP1_DZ",
 	"CH_47F_BAF",
-	"CH_47F_EP1"
+	"CH_47F_EP1",
+	"BAF_Merlin_DZE"
 ];
 
 DZE_HeliAllowToTow = [
@@ -416,7 +417,7 @@ dayz_selectedDoor = objNull;
 
 PVDZE_veh_Publish = [];		// for vehicle traders
 PVDZE_obj_Trade = [];		// For all traders increment qty
-PVDZE_plr_TradeMenu = [];  		// For all traders	
+PVDZE_plr_TradeMenu = [];  		// For all traders
 PVDZE_plr_DeathB = [];
 
 //DayZ settings
@@ -446,6 +447,9 @@ if(isNil "dayz_maxZeds") then {
 };
 if (isNil "DZE_PlayerZed") then {
 	DZE_PlayerZed = true;
+};
+if (isNil "DZE_GodModeBase") then {
+	DZE_GodModeBase = false;
 };
 if(isNil "DZEdebug") then {
 	DZEdebug = false;
@@ -489,12 +493,22 @@ if(isNil "DZE_BuildOnRoads") then {
 if(isNil "DZE_MissionLootTable") then {
 	DZE_MissionLootTable = false;
 };
+if(isNil "DZE_ConfigTrader") then {
+	DZE_ConfigTrader = false;
+};
 if(isNil "DZE_LootSpawnTimer") then {
-        DZE_LootSpawnTimer = 10;
+	DZE_LootSpawnTimer = 10;
 };
 if(isNil "DZE_HeliLift") then {
 	DZE_HeliLift = true;
 };
+if(isNil "DZE_DamageBeforeMaint") then {
+	DZE_DamageBeforeMaint = 0.09;
+};
+if(isNil "DZE_StaticConstructionCount") then {
+	DZE_StaticConstructionCount = 0;
+};
+
 
 // needed on server
 if(isNil "DZE_PlotPole") then {
@@ -538,7 +552,7 @@ DZE_isNewStorage = ["VaultStorage","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ"
 
 // These work with just a running generator
 dayz_fuelpumparray = ["FuelPump_DZ","Land_A_FuelStation_Feed","Land_Ind_FuelStation_Feed_EP1","Land_FuelStation_Feed_PMC","FuelStation","Land_ibr_FuelStation_Feed","Land_fuelstation_army","Land_fuelstation","land_fuelstation_w","Land_benzina_schnell"];
-DZE_fueltruckarray = ["KamazRefuel_DZ","UralRefuel_TK_EP1_DZ","MtvrRefuel_DES_EP1_DZ","V3S_Refuel_TK_GUE_EP1_DZ","MtvrRefuel_DZ"];
+DZE_fueltruckarray = ["KamazRefuel_DZ","UralRefuel_TK_EP1_DZ","MtvrRefuel_DES_EP1_DZ","V3S_Refuel_TK_GUE_EP1_DZ","MtvrRefuel_DZ","KamazRefuel_DZE","UralRefuel_TK_EP1_DZE","MtvrRefuel_DES_EP1_DZE","V3S_Refuel_TK_GUE_EP1_DZE","MtvrRefuel_DZE"];
 
 // Standard Fuel sources
 dayz_fuelsources = ["Land_Ind_TankSmall","Land_fuel_tank_big","Land_fuel_tank_stairs","Land_fuel_tank_stairs_ep1","Land_wagon_tanker","Land_fuelstation","Land_fuelstation_army","land_fuelstation_w","Land_benzina_schnell"];
@@ -552,7 +566,7 @@ if(isServer) then {
 	dayz_players = [];
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
-	
+
 	DZE_DYN_AntiStuck = 0;
 	DZE_DYN_AntiStuck2nd = 0;
 	DZE_DYN_AntiStuck3rd = 0;
@@ -570,37 +584,38 @@ if(isServer) then {
 	if(isNil "DZE_BackpackGuard") then {
 		DZE_BackpackGuard = true;
 	};
-	
+
 	if(isNil "DZE_CleanNull") then {
 		DZE_CleanNull = false;
 	};
 
-	if(isNil "DZE_HeliLift") then {
-		DZE_HeliLift = true;
-	};
-	
 	DZE_safeVehicle = ["ParachuteWest","ParachuteC"];
 };
 
 if(!isDedicated) then {
 
 	dayz_spawnPos = getPosATL player;
-	
+
 	dayz_buildingMonitor = [];	//Buildings to check
 	dayz_bodyMonitor = [];
-	
+
 	// weather control var
 	zeroPreviousWeather = [0,0,[0,0],0];
 	zeroCurrentWeather = [0,0,[0,0],0];
-	
-	dayz_baseTypes = 		getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
-	
+
+	if (DZE_MissionLootTable) then {
+		dayz_baseTypes = 		getArray (missionConfigFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
+	} else {
+		dayz_baseTypes = 		getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
+	};
+
+
 	//temperature variables
 	dayz_temperatur 		= 	36;		//TeeChange
 	dayz_temperaturnormal 	= 	36;		//TeeChange
 	dayz_temperaturmax 		= 	42;		//TeeChange
 	dayz_temperaturmin 		= 	27;		//TeeChange
-	
+
 	//player special variables
 	dayZ_lastPlayerUpdate = 0;
 	dayZ_everyonesTents =	[];
@@ -678,20 +693,24 @@ if(!isDedicated) then {
 	if(isNil "DZE_HaloJump") then {
 		DZE_HaloJump = true;
 	};
-	
+
 	if(isNil "DZE_AntiWallLimit") then {
 		DZE_AntiWallLimit = 1;
 	};
 	if(isNil "DZE_requireplot") then {
 		DZE_requireplot = 1;
 	};
-	
+	if(isNil "DZE_R3F_WEIGHT") then {
+		DZE_R3F_WEIGHT = true;
+	};
+
+
 	DZE_AntiWallCounter = 0;
 
 	DZE_FreshSpawn = false;
-	
+
 	DZE_myHaloVehicle = objNull;
-	
+
 	DZE_Friends = [];
 
 	DZE_CanPickup = true;
