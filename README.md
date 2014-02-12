@@ -3,7 +3,11 @@
 
 Bexs script pack added to DayZ Epoch.
 
-CodingPfeffer
+------------------
+Team Steel Company
+------------------
+CodingPfeffer (ilikepizza)
+McKenzi
 
 --------------------------
 Special thanks
