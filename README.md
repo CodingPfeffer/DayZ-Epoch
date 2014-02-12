@@ -4,9 +4,13 @@
 Bexs script pack added to DayZ Epoch.<br>
 Several own customizations will be made over time.<br>
 Always compatible to the Epoch servers.<br>
-Compatible versions: <br>
+
+-----
+Compatible versions
+-----
 * 1.0.4
 * 1.0.4.1
+
 Just checkout the corresponding tag (i.e. "1.0.4bexs") <br>
 
 ------
