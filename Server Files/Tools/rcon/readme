@@ -1,0 +1,25 @@
+This php can be used for executing remote battleye commands.
+e.g.: Server side messages to all players and server shutdown.
+
+usage:
+php rcon.php "say -1 Server restarts in 5 minutes."
+php rcon.php "#shutdown"
+
+It is also easy to use with cron on linux, if your server runs with wine.
+These are our restart cron jobs for a server restart every 6 hours, starting at midnight with several warnings.
+
+0 * * * * php ~/tools/rcon/rcon.php "say -1 Server restarts every 6 hours with several warnings. At 0,6,12 and 24 hours (UTC+1)."
+0 5,11,17,23 * * * php ~/tools/rcon/rcon.php "say -1 Server restart in 60 minutes."
+30 5,11,17,23 * * * php ~/tools/rcon/rcon.php "say -1 Server restart in 30 minutes."
+40 5,11,17,23 * * * php ~/tools/rcon/rcon.php "say -1 Server restart in 20 minutes."
+50 5,11,17,23 * * * php ~/tools/rcon/rcon.php "say -1 Server restart in 10 minutes."
+55 5,11,17,23 * * * php ~/tools/rcon/rcon.php "say -1 Server restart in 5 minutes."
+56 5,11,17,23 * * * php ~/tools/rcon/rcon.php "say -1 Server restart in 4 minutes."
+57 5,11,17,23 * * * php ~/tools/rcon/rcon.php "say -1 Server restart in 3 minutes."
+58 5,11,17,23 * * * php ~/tools/rcon/rcon.php "say -1 Server restart in 2 minutes."
+59 5,11,17,23 * * * php ~/tools/rcon/rcon.php "say -1 Server restart in 1 minute."
+0 0,6,12,18 * * * php ~/tools/rcon/rcon.php "say -1 Server restarts now."
+0 0,6,12,18 * * * sleep 1; php ~/tools/rcon/rcon.php "#shutdown"
+0 0,6,12,18 * * * sleep 5; ~/server/server.sh restart
+
+For a starting of the server, you have to use an own bash script or a batch file on windows.
