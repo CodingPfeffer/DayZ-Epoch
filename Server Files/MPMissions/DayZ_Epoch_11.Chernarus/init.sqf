@@ -29,6 +29,9 @@ AutoRefuel			 = true; // Autorefuel
 Marker		 		 = true; // Marker	
 Crates				 = true; // Belohnungskisten im sector
 NoTalk				 = true; // Kein sprechen im sidechat
+UPSMON_AI			 = false; // Heli AI
+Air_Raids			= false; // Air Raids (bombing of towns)
+
 //
 // DayZ Epoch config
 spawnShoremode = 1; // Default = 1 (on shore)
@@ -133,37 +136,37 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 
 //Bexs Pack
 if(Churches)then{
-[] execVM "fixes\hide_churches.sqf";
-[] execVM "fixes\churches.sqf";
+	[] execVM "fixes\hide_churches.sqf";
+	[] execVM "fixes\churches.sqf";
 };
 
 if(Menu)then{
-[] execVM "fixes\actions\actions.sqf";
+	[] execVM "fixes\actions\actions.sqf";
 };
 
 if(Infobox)then{
-[] execVM "fixes\infobox.sqf";
+	[] execVM "fixes\infobox.sqf";
 };
 
 if(Safezones)then{
-[] execVM "fixes\agn_SafeZoneCommander.sqf";
+	[] execVM "fixes\agn_SafeZoneCommander.sqf";
 //[] execVM "fixes\safezone.sqf";
 };
 
 if(AutoRefuel)then{
-[] execVM 'Scripts\kh_actions.sqf'; 
+	[] execVM 'Scripts\kh_actions.sqf'; 
 };
 if(Marker)then{
-[] execVM "fixes\marker.sqf";
+	[] execVM "fixes\marker.sqf";
 //[] execVM "fixes\marker2.sqf";
 };
 
 if(NoTalk)then{
-[] execVM "fixes\nosidechat.sqf";
+	[] execVM "fixes\nosidechat.sqf";
 };
 
 if(Crates)then{
-[] execVM "fixes\crates.sqf";
+	[] execVM "fixes\crates.sqf";
 };
 
 // Mission System Markers
@@ -174,7 +177,9 @@ if(Crates)then{
 [] execVM "R3F_ARTY_AND_LOG\init.sqf";	
 
 //Sarge
-call compile preprocessFileLineNumbers "addons\UPSMON\scripts\Init_UPSMON.sqf";
+if (UPSMON_AI) then {
+	call compile preprocessFileLineNumbers "addons\UPSMON\scripts\Init_UPSMON.sqf";
+}
 call compile preprocessFileLineNumbers "addons\SHK_pos\shk_pos_init.sqf";
 [] execVM "addons\SARGE\SAR_AI_init.sqf";
 

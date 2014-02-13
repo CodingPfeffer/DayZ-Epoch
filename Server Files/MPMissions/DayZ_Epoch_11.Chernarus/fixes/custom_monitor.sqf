@@ -26,6 +26,7 @@ while {custom_monitor} do
 	<t size='1' font='Bitstream' align='left' color='#EEC900'>Headshots:</t><t size='1' font='Bitstream' align='right' color='#FFFAF0'>%6</t><br/>
 	<t size='1' font='Bitstream' align='left' color='#EEC900'>Zombies (alive/total):</t><t size='1' font='Bitstream' align='right' color='#FFFAF0'>%13/%12</t><br/>
 	<t size='1' font='Bitstream' align='left' color='#EEC900'>FPS:</t><t size='1' font='Bitstream' align='right' color='#FFFAF0'>%14</t><br/>
+    <t size='1' font='Bitstream' align='left' color='#EEC900'>Restart in minutes</t><t size='1' font='Bitstream' align='right' color='#F2493D'>%8</t><br/>
 	<t size='1' font='Bitstream' align='center' color='#DDDDDD'>Bexs Epoch Pack</t><br/>
 	<t size='1' font='Bitstream' align='center' color='#DDDDDD'>Bexs-Epoch.de</t><br/>",
 

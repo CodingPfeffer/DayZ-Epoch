@@ -347,8 +347,10 @@ if (isServer and isNil "sm_done") then {
 
 	//bexs
 	//Spawn air raid
-	diag_log (format["Air Raid: ABOUT TO SPAWN"]); 
-    _id = [] spawn server_airRaid;
+	if (Air_Raids) then {
+		diag_log (format["Air Raid: ABOUT TO SPAWN"]); 
+	    _id = [] spawn server_airRaid;
+	}
 	//
 	
 	if (isDedicated) then {
